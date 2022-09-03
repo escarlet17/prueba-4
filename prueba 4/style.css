@@ -1,0 +1,337 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #202020;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.imagenL {
+    width: 257px;  
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #034574;
+  transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+.box{
+    position: absolute;
+}
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3x solid #a50559;
+    background: #2C3333 url("img/busqueda.png")
+        no-repeat 9px center;
+    width: 200px;
+    transform: all 5s;
+}
+input.src:hover{
+    width: 180px;
+    background-color: #2C3333;
+    border-color: #2C3333;
+}
+  
+/* MOBILE */
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #2c3e50;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+.imagen1 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+ height: 100vh;
+ background-image:
+          url(img/tibbers.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ padding: 1%;
+ font-family: 'Century Gothic', sans-serif;
+
+}
+
+.titulo-1{
+  color: white;
+  font-weight: bold;
+  font-size: 450%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.col-1 {
+  border: rgb(255, 255, 255) 5px solid;
+  margin-top: -2%;
+}
+
+.col-2 {
+  border: rgb(255, 255, 255) 5px solid;
+  margin-top: -2%;
+}
+
+.col-3 {
+  border: rgb(255, 255, 255) 5px solid;
+  margin-top: 0%;
+}
+
+.col-4 {
+  border: rgb(255, 255, 255) 5px solid;
+  margin-top: 0%;
+}
+
+.col-5 {
+  border: rgb(255, 255, 255) 5px solid;
+  margin-top: 0%;
+}
+.subtitulo {
+  border: white 30px solid;
+}
+.subtitulo .sub {
+  text-align: center;
+  color: #000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  margin: 30px 0 20px;
+  font-weight: bold;
+}
+.subfin {
+  text-align: left;
+  width: 900px;
+  height: 500px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  background-image:
+           url(img/riotgamescom-forge.jpg);
+ 
+}
+.suba {
+  background-color: red;
+  color: #f8f8f8;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 9px 10px 9px 32px;
+  width: 30%;
+}
+.ti-2{
+  color: white;
+}
+.suba2{
+  color: white;
+}
+.boton-1 {
+  border-radius: 30px;
+  margin: 20px;
+  height: 35px;
+  width: 200px;
+  background-color:red;
+  color:white;
+  border: red;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 45%;
+
+}
+.finalizima {
+  align-items: flex-start;
+  text-align: center;
+}
+  footer nav {
+      flex-direction: row;
+      padding-bottom: 0;
+      align-items:center;
+      text-align: baseline;
+}
+
+
+footer .container-2 {
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-direction: row;
+}
+.container a img{
+  width: 30px;
+}
+
+
+footer {
+  background-color: #0c0c0cfb;
+  
+}
+
+footer .container{
+  display: flex;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: row;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+footer .container a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  
+}
+
+footer .container-2 a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+footer a:hover{
+  color: rgb(255, 0, 0);
+}
+
+.redes a img {
+  width: 10px;
+}
+
+.container a {
+  font-size: 20%;
+}
+.container-2 nav{
+  justify-content: flex-start;
+}
+.container-2 a{
+  font-size: 20%;
+}
+.container-2 a img{
+  width: 10px;
+}
+.container-2 p{
+  color: #ffffff;
+}
