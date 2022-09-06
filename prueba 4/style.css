@@ -212,7 +212,7 @@ input.src:hover{
   font-weight: bold;
 }
 .subfin {
-  text-align: left;
+
   width: 900px;
   height: 500px;
   padding: 30px;
@@ -230,12 +230,15 @@ input.src:hover{
   font-size: 100%;
   padding: 9px 10px 9px 32px;
   width: 30%;
+  vertical-align: bottom;
 }
 .ti-2{
   color: white;
+  vertical-align: bottom;
 }
 .suba2{
   color: white;
+  vertical-align: bottom;
 }
 .boton-1 {
   border-radius: 30px;
